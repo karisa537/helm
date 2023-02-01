@@ -3,7 +3,7 @@ replicaCount: 2
 image:
   repository: jkalume/kari-git-images
   pullPolicy: IfNotPresent
-  tag: 20230130.1
+  tag: "20230130.1"
 
 service:
   type: LoadBalancer
