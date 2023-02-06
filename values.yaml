@@ -1,0 +1,16 @@
+springboot:
+  name: envtrial
+  replicas: 1
+
+  image:
+    name: jkalume/kari-git-images
+    tag: "20230130.1"
+    port: 8080
+    env: 
+    - name: NODE_ENV
+      value: production
+  username: root
+  password: password
+  service:
+    name: envtrial
+    type: ClusterIP
